@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="/images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="11 - Hera">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mark Ronald Abehay">
+    <title>11 - Hera</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .banner {
+            width: 100%;
+            height: 200vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/images/HERA.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+        }
+        .navbar {
+            width: 90%;
+            margin: auto;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            width: 150px;
+            cursor: pointer;
+        }
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 15px;
+            position: relative;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width:  0%;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.1s;
+
+        }
+        .navbar ul li:hover:after {
+            width: 100%;
+        }
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-100%);
+            text-align: center;
+            color: white;
+
+        }
+        .content h1 {
+            font-size: 60px;
+            margin: 80px;
+        }
+        #list {
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            transform: translateY(-145%);
+        }
+        #list td, #list th {
+            border: 1px solid #fefefe;
+            padding: 8px;
+        }
+        #list tr {
+            background-color: #fefefe;}
+
+        #list tr:hover {
+            background-color: #fefefe;}
+        #list th {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        background-color: #bb0009;
+        color: #fefefe;
+        }
+        .no {
+            text-align-last: center;
+        }
+        .lastname {
+            text-align-last: center;
+        }
+        .firstname {
+            text-align-last: center;
+        }
+        .male {
+            text-align-last: center;
+            font-size: 30px;
+            border-bottom-color: #bb0009;
+        }
+        body {
+            width: 100%;
+            height: 200vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/images/HERA.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+}
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="banner">
+        <div class="navbar">
+            <img src="/images/logo.png" class="logo">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/classsched.html">Class Schedule</a></li>
+                <li><a href="http://127.0.0.1:5500/masterlist.html">Master List</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li><a href="http://127.0.0.1:5500/dance.html">Dance</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Master List</h1>
+        </div>
+    </div>
+    <table id="list">
+            <th class="male" colspan="3">MALE</th>
+        </tr>
+        <tr>
+            <th class="no">No.</th>
+            <th class="lastname">Last Name</th>
+            <th class="firstname">First Name</th>
+        </tr>
+        <tr>
+            <td class="no">1</td>
+            <td class="lastname">Abehay</td>
+            <td class="firstname">Mark Ronald</td>
+        </tr>
+        <tr>
+            <td class="no">2</td>
+            <td class="lastname">Afan</td>
+            <td class="firstname">Marc Dave</td>
+        </tr>
+        <tr>
+            <td class="no">3</td>
+            <td class="lastname">Agaro</td>
+            <td class="firstname">Eiljaed Kael</td>
+        </tr>
+        <tr>
+            <td class="no">4</td>
+            <td class="lastname">Ariño</td>
+            <td class="firstname">Mark Anthony</td>
+        </tr>
+        <tr>
+            <td class="no">5</td>
+            <td class="lastname">Becona</td>
+            <td class="firstname">Kyle</td>
+        </tr>
+        <tr>
+            <td class="no">6</td>
+            <td class="lastname">Bico</td>
+            <td class="firstname">Mark lann</td>
+        </tr>
+        <tr>
+            <td class="no">7</td>
+            <td class="lastname">Diaz</td>
+            <td class="firstname">Edward</td>
+        </tr>
+        <tr>
+            <td class="no">8</td>
+            <td class="lastname">Eroy</td>
+            <td class="firstname">Josh Antoniel</td>
+        </tr>
+        <tr>
+            <td class="no">9</td>
+            <td class="lastname">Estrada</td>
+            <td class="firstname">Joseph Ceazar Ner</td>
+        </tr>
+        <tr>
+            <td class="no">10</td>
+            <td class="lastname">Gonzales Jr.</td>
+            <td class="firstname">Edmundo</td>
+        </tr>
+        <tr>
+            <td class="no">11</td>
+            <td class="lastname">Mahusay</td>
+            <td class="firstname">Nheil Stephen
+            </td>
+        </tr>
+        <tr>
+            <td class="no">12</td>
+            <td class="lastname">Malabanan</td>
+            <td class="firstname">Tristan Joseph</td>
+        </tr>
+        <tr>
+            <td class="no">13</td>
+            <td class="lastname">Martinez</td>
+            <td class="firstname">Stephen Luise</td>
+        </tr>
+        <tr>
+            <td class="no">14</td>
+            <td class="lastname">Morta</td>
+            <td class="firstname">Jericho</td>
+        </tr>
+        <tr>
+            <td class="no">15</td>
+            <td class="lastname">Pilapil</td>
+            <td class="firstname">Kenchin</td>
+        </tr>
+        <tr>
+            <td class="no">16</td>
+            <td class="lastname">Morta</td>
+            <td class="firstname">Carlos Emmanuel</td>
+        </tr>
+        <tr>
+            <td class="no">17</td>
+            <td class="lastname">Siguenza</td>
+            <td class="firstname">Bren Johno</td>
+        </tr>
+        <tr>
+            <td class="no">18</td>
+            <td class="lastname">Villanueva</td>
+            <td class="firstname">Kryzler</td>
+        </tr>
+
+    </table>
+    <table id="list">
+        <th class="male" colspan="3">FEMALE</th>
+    </tr>
+    <tr>
+        <th class="no">No.</th>
+        <th class="lastname">Last Name</th>
+        <th class="firstname">First Name</th>
+    </tr>
+    <tr>
+        <td class="no">1</td>
+        <td class="lastname">Alo,</td>
+        <td class="firstname">Janice</td>
+    </tr>
+    <tr>
+        <td class="no">2</td>
+        <td class="lastname">Alquiza</td>
+        <td class="firstname">Queency</td>
+    </tr>
+    <tr>
+        <td class="no">3</td>
+        <td class="lastname">Antolin</td>
+        <td class="firstname">Marie</td>
+    </tr>
+    <tr>
+        <td class="no">4</td>
+        <td class="lastname">Apostol</td>
+        <td class="firstname">Arel</td>
+    </tr>
+    <tr>
+        <td class="no">5</td>
+        <td class="lastname">Cells</td>
+        <td class="firstname">Christine</td>
+    </tr>
+    <tr>
+        <td class="no">6</td>
+        <td class="lastname">Conde</td>
+        <td class="firstname">Cristel Diana</td>
+    </tr>
+    <tr>
+        <td class="no">7</td>
+        <td class="lastname">Dahuya</td>
+        <td class="firstname">Monaliza</td>
+    </tr>
+    <tr>
+        <td class="no">8</td>
+        <td class="lastname">Gutierrez</td>
+        <td class="firstname">Margie</td>
+    </tr>
+    <tr>
+        <td class="no">9</td>
+        <td class="lastname">Lopena</td>
+        <td class="firstname">Kayla Mae</td>
+    </tr>
+    <tr>
+        <td class="no">10</td>
+        <td class="lastname">Mabini</td>
+        <td class="firstname">Theris Moira</td>
+    </tr>
+    <tr>
+        <td class="no">11</td>
+        <td class="lastname">Penaso</td>
+        <td class="firstname">Jenny Rose</td>
+    </tr>
+    <tr>
+        <td class="no">12</td>
+        <td class="lastname">Tanting</td>
+        <td class="firstname">Jehan</td>
+    </tr>
+</table>
+</body>
+</html> 
